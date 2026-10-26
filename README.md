@@ -23,3 +23,7 @@ Test downloaded QR artwork on a phone before printing, especially after changing
 Create, view details, edit content and design in place, delete, and undo the last deletion. Updates preserve each record ID and creation date, and record an update timestamp. The library persists across reloads in localStorage on this browser; it is not a cloud database. Editing static codes affects future exports only. Existing printed QR artwork keeps its encoded destination.
 
 The home page and studio use system typography, cool neutral surfaces, blue accents, translucent navigation, responsive layouts, keyboard focus indicators, modal focus trapping, Escape dismissal, and reduced-motion/transparency preferences.
+
+## Public home and authentication
+
+The full-width public landing page is separate from the workspace shell. Signed-out visitors stay on the home page; create and login actions open Google sign-in. Firebase's auth-state observer sends authenticated sessions to the QR library and returns signed-out sessions home. The Scanva logo always returns home; authenticated users can reopen their workspace there. There is no guest bypass into the workspace. Firebase must be configured before real sign-in can be tested. Site hosting access remains unchanged.
