@@ -35,3 +35,7 @@ Scanva Web is registered in Firebase project `scanva-9e882`. Its public web app 
 ## Vercel deployment
 
 The included vercel.json configures Vite, npm run build, dist output, and SPA routing. Set the four VITE_FIREBASE environment variables in Vercel before deployment. Authorize the assigned production hostname in Firebase Authentication → Settings → Authorized domains. The .vercelignore excludes local environment files and OpenAI hosting metadata.
+
+## Account and interface
+
+The sidebar account menu opens Profile, Personalization, Settings, Help, and Logout. Google profile photos are the default; uploaded photos are center-cropped and stored per Firebase user on this browser, with a reset-to-Google action. Display names update through Firebase Authentication. Light, Midnight, system appearance, and motion preferences persist locally. Custom listbox dropdowns support keyboard navigation, focus restoration, outside dismissal, and Escape. Profile dialogs use a portal and focus trap to stay usable with the mobile navigation drawer.
