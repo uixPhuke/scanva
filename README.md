@@ -17,3 +17,9 @@ Firebase documentation: https://firebase.google.com/docs/auth/web/google-signin
 Google sign-in is intentionally disabled until configured. Authentication does not enable cloud sync: codes remain saved on the current browser. No account credentials are needed to create or export a code.
 
 Test downloaded QR artwork on a phone before printing, especially after changing colors or adding a logo. Keep a contrasting background and quiet zone.
+
+## QR library
+
+Create, view details, edit content and design in place, delete, and undo the last deletion. Updates preserve each record ID and creation date, and record an update timestamp. The library persists across reloads in localStorage on this browser; it is not a cloud database. Editing static codes affects future exports only. Existing printed QR artwork keeps its encoded destination.
+
+The home page and studio use system typography, cool neutral surfaces, blue accents, translucent navigation, responsive layouts, keyboard focus indicators, modal focus trapping, Escape dismissal, and reduced-motion/transparency preferences.
