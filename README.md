@@ -31,3 +31,7 @@ The full-width public landing page is separate from the workspace shell. Signed-
 ## Connected Firebase project
 
 Scanva Web is registered in Firebase project `scanva-9e882`. Its public web app configuration is stored in ignored `.env.local` for local production builds. Google is enabled as a sign-in provider; localhost and the current Sites hostname are authorized. Configure the same four VITE_FIREBASE values on any new deployment host and add its hostname to the Firebase authorized domain list. No service-account credentials are used.
+
+## Vercel deployment
+
+The included vercel.json configures Vite, npm run build, dist output, and SPA routing. Set the four VITE_FIREBASE environment variables in Vercel before deployment. Authorize the assigned production hostname in Firebase Authentication → Settings → Authorized domains. The .vercelignore excludes local environment files and OpenAI hosting metadata.
