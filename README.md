@@ -27,3 +27,7 @@ The home page and studio use system typography, cool neutral surfaces, blue acce
 ## Public home and authentication
 
 The full-width public landing page is separate from the workspace shell. Signed-out visitors stay on the home page; create and login actions open Google sign-in. Firebase's auth-state observer sends authenticated sessions to the QR library and returns signed-out sessions home. The Scanva logo always returns home; authenticated users can reopen their workspace there. There is no guest bypass into the workspace. Firebase must be configured before real sign-in can be tested. Site hosting access remains unchanged.
+
+## Connected Firebase project
+
+Scanva Web is registered in Firebase project `scanva-9e882`. Its public web app configuration is stored in ignored `.env.local` for local production builds. Google is enabled as a sign-in provider; localhost and the current Sites hostname are authorized. Configure the same four VITE_FIREBASE values on any new deployment host and add its hostname to the Firebase authorized domain list. No service-account credentials are used.
